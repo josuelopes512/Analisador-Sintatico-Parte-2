@@ -280,7 +280,7 @@ def main():
 
     clear()
     print("Selecione Entre 1 até 9:\n")
-    print("1 - a.txt\n2 - b.txt\n3 - c.txt\n4 - d.txt\n5 - e.txt\n6 - f.txt\n7 - g.txt\n8 - h.txt\n9 - i.txt\n\n")
+    print("1 - a.txt\n2 - b.txt\n3 - c.txt\n4 - d.txt\n5 - e.txt\n6 - f.txt\n7 - g.txt\n8 - h.txt(Principal)\n9 - i.txt\n\n")
     escolha = int(input('Escolha uma Gramatica: '))
 
     if not (escolha in [i for i in range(1, 10)]):
