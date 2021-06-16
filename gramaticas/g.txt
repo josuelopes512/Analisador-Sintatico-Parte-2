@@ -1,0 +1,10 @@
+^ -> S$
+S -> aAF
+A -> B | C
+B -> D+
+C -> E*
+D -> x | y
+D -> z | ε
+E -> a | b
+E -> c
+F -> A | ε
