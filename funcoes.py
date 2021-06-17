@@ -1,11 +1,17 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
+from os import system, name
 
 def union(first, begins):
     n = len(first)
     first |= begins
     return len(first) != n
 
+def clear():
+    if name == 'nt':
+        system('cls')
+    else:
+        system('clear')
 
 def transform2(string, lista):  # conversão e filtragem
     listanova = []
@@ -298,7 +304,8 @@ def visualizar_follow(follow):
 
 
 def visualizar_grammar(grammar):
-    print("Gramatica\n")
+    clear()
+    print("\n\nGramatica\n")
     for i in grammar:
         print(i)
     print("\n--------------------------------------------------------------------------------")

@@ -2,16 +2,7 @@
 import re
 from funcoes import *
 from pathlib import Path
-from os import system, name
 from grammar import Grammar
-
-
-def clear():
-    if name == 'nt':
-        system('cls')
-    else:
-        system('clear')
-
 
 def tratarArq(lista):
     lista = " ".join(lista.split())
@@ -296,9 +287,8 @@ def main():
         clear()
         exit()
     elif confirmar == 'OK':
+        clear()
         pass
-
-    clear()
 
     gr = lerArquivo(gramatica[escolha-1])
 

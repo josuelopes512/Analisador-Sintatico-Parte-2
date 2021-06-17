@@ -50,5 +50,5 @@ class Grammar:
 
         tmp = []
         
-        # a = [i for j in [list(i) for i in a] for i in j]
+        a = [i for j in [list(i) for i in a] for i in j] # Lugar Onde Comentar ou Descomentar De Acordo com a gramatica
         return set(a)
